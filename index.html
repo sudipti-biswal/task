@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <img src="./Images/ptp.png" alt="ptp" class="ptp" />
+      <div class="right-section">
+        <img src="./Images/question-icon.png" alt="question" class="question" />
+        <img src="./Images/dot-icon.png" alt="dot" class="dot-icon" />
+        <img src="./Images/oneok-logo 2.png" alt="oneok" class="oneok" />
+        <img src="./Images/avatar.png" alt="Avatar" class="avatar" />
+      </div>
+    </div>
+    <div class="all-content">
+      <!--------------- left Bar is here --------------->
+      <div class="left-bar">
+        <div class="arrow" onclick="toggleMenu()">
+          <img src="./Images/arrow.png" alt="arrow" id="arrowImage" />
+        </div>
+
+        <div class="menu-items">
+          <div class="top-section">
+            <div class="expand-box">
+              <div class="icon-circle" onclick="toggleSubMenu(this)">
+                <img src="./Images/dashboard.png" alt="dashboard" />
+              </div>
+              <span class="item-text">Dashboard</span>
+            </div>
+            <div class="expand-box">
+              <div class="icon-circle active" onclick="toggleSubMenu(this)">
+                <img src="./Images/state-white.png" alt="state" class="state" />
+              </div>
+              <span class="item-text">State</span>
+            </div>
+
+            <div class="expand-box">
+              <div class="icon-circle" onclick="toggleSubMenu(this)">
+                <img src="./Images/local.png" alt="local" class="local" />
+              </div>
+              <span class="item-text">Local</span>
+            </div>
+          </div>
+          <div class="bottom-section">
+            <div class="expand-box">
+              <div class="icon-circle" onclick="toggleSubMenu(this)">
+                <img src="./Images/setting.png" alt="setting" class="setting" />
+              </div>
+              <span class="item-text">Settings</span>
+            </div>
+            <div class="expand-box">
+              <div class="icon-circle" onclick="toggleSubMenu(this)">
+                <img src="./Images/power-off.png" alt="off" class="off" />
+              </div>
+              <span class="item-text">Power Off</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------- table section who contain all the data starts here --------->
+      <div class="table-section">
+        <!--------- HTML Tab is here ------------>
+        <div class="tab-container">
+          <div class="tab">
+            <button class="tab-link active" onclick="openTab(event, 'tab1')">
+              Final Report Submissions
+            </button>
+            <button class="tab-link" onclick="openTab(event, 'tab2')">
+              Manage Reports
+            </button>
+            <button class="tab-link" onclick="openTab(event, 'tab3')">
+              Manage Data
+            </button>
+            <button class="tab-link" onclick="openTab(event, 'tab3')">
+              Import History
+            </button>
+          </div>
+          <div class="tab-firstRow">
+            <div class="search-input-container">
+              <input
+                type="text"
+                id="searchInput"
+                class="search-input"
+                placeholder="Search..."
+              />
+              <i class="search-icon">
+                <img src="./Images/search-Bold.png" alt="Search" />
+              </i>
+              <i class="filter-icon">
+                <img src="./Images/filter.png" alt="Filter" />
+              </i>
+            </div>
+            <img
+              src="./Images/plus icon.png"
+              alt="plus"
+              class="firstrow-icon"
+            />
+            <img
+              src="./Images/vertical-dot.png"
+              alt="doot"
+              class="firstrow-icon"
+            />
+          </div>
+          <div id="tab1" class="tab-content active">
+            <table>
+              <tr>
+                <th>
+                  <input type="checkbox" />
+                </th>
+                <th>TAX YEAR</th>
+                <th>COMPANY</th>
+                <th>STATE</th>
+                <th>REPORT CATEGORY</th>
+                <th>DUE DATE</th>
+                <th>SUBMISSION DATE</th>
+                <th>STATUS</th>
+                <th>REPORT</th>
+                <th>OPTION</th>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" />
+                </td>
+                <td>2022</td>
+                <td>ONEOK Elkcreek Pipeline</td>
+                <td>WY</td>
+                <td>WY pipeline</td>
+                <td>07/05/2022</td>
+                <td>07/05/2022</td>
+                <td>Submitted</td>
+                <td><img src="./Images/pdf.png" alt="pdf" /></td>
+                <td><img src="./Images/option.png" alt="option" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" />
+                </td>
+                <td>2022</td>
+                <td>ONEOK Elkcreek Pipeline</td>
+                <td>WY</td>
+                <td>WY pipeline</td>
+                <td>07/05/2022</td>
+                <td>07/05/2022</td>
+                <td>Submitted</td>
+                <td><img src="./Images/pdf.png" alt="pdf" /></td>
+                <td><img src="./Images/option.png" alt="option" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" />
+                </td>
+                <td>2022</td>
+                <td>ONEOK Elkcreek Pipeline</td>
+                <td>WY</td>
+                <td>WY pipeline</td>
+                <td>07/05/2022</td>
+                <td>07/05/2022</td>
+                <td>Submitted</td>
+                <td><img src="./Images/pdf.png" alt="pdf" /></td>
+                <td><img src="./Images/option.png" alt="option" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" />
+                </td>
+                <td>2022</td>
+                <td>ONEOK Elkcreek Pipeline</td>
+                <td>WY</td>
+                <td>WY pipeline</td>
+                <td>07/05/2022</td>
+                <td>07/05/2022</td>
+                <td>Submitted</td>
+                <td><img src="./Images/pdf.png" alt="pdf" /></td>
+                <td><img src="./Images/option.png" alt="option" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" />
+                </td>
+                <td>2022</td>
+                <td>ONEOK Elkcreek Pipeline</td>
+                <td>WY</td>
+                <td>WY pipeline</td>
+                <td>07/05/2022</td>
+                <td>07/05/2022</td>
+                <td>Submitted</td>
+                <td><img src="./Images/pdf.png" alt="pdf" /></td>
+                <td><img src="./Images/option.png" alt="option" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" />
+                </td>
+                <td>2022</td>
+                <td>ONEOK Elkcreek Pipeline</td>
+                <td>WY</td>
+                <td>WY pipeline</td>
+                <td>07/05/2022</td>
+                <td>07/05/2022</td>
+                <td>Submitted</td>
+                <td><img src="./Images/pdf.png" alt="pdf" /></td>
+                <td><img src="./Images/option.png" alt="option" /></td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="tab2" class="tab-content">
+            <h2>No Content</h2>
+          </div>
+
+          <div id="tab3" class="tab-content">
+            <h2>No Content</h2>
+          </div>
+          <div id="tab3" class="tab-content">
+            <h2>No Content</h2>
+          </div>
+        </div>
+        <div class="tablebottom-section">
+          <div class="pagination">
+            <a href="#" class="pagination-link">Previous</a>
+            <a href="#" class="pagination-link active">1</a>
+            <a href="#" class="pagination-link">2</a>
+            <a href="#" class="pagination-link">3</a>
+            <a href="#" class="pagination-link">4</a>
+            <a href="#" class="pagination-link">Next</a>
+          </div>
+          <div class="page-section">
+            <p>1-10 of 130</p>
+            <div class="dropdown">
+              <button class="dropdown-button">1</button>
+              <div class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+              </div>
+            </div>
+
+            <p>Per Row</p>
+          </div>
+        </div>
+      </div>
+
+      <!--------------- Right bar is here ------------------->
+      <div class="right-bar">
+        <div class="menu-items">
+          <div class="top-section">
+            <div class="icon-circle">
+              <img src="./Images/dashboard.png" alt="dashboard" />
+            </div>
+            <div class="icon-circle active">
+              <img src="./Images/state-white.png" alt="state" class="state" />
+            </div>
+            <div class="icon-circle">
+              <img src="./Images/local.png" alt="local" class="local" />
+            </div>
+          </div>
+          <div class="bottom-section">
+            <div class="icon-circle">
+              <img src="./Images/setting.png" alt="setting" class="setting" />
+            </div>
+            <div class="icon-circle">
+              <img src="./Images/power-off.png" alt="off" class="off" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
